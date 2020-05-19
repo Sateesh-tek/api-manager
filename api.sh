@@ -1,7 +1,9 @@
 #!/bin/sh
 
 #rm -rf *
-
+echo "API_ID" $USR
+echo "API_ID" $PSW
+echo "API_ID" $Target_Environment
 
 if [ $Actions == "Create" ]
 then
