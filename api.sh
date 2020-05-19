@@ -1,6 +1,6 @@
 #!/bin/sh
 
-rm -rf *
+#rm -rf *
 
 
 if [ $Actions == "Create" ]
