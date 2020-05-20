@@ -1,7 +1,7 @@
 #!/bin/sh
 echo "API_ID" $VALUE_FOURE == "policy"
 
-if [ $VALUE_FOURE == "policy"]
+if [ $VALUE_FOURE == "policy" ]
 then
 
  awk '/new/  {print $NF}' file.txt >> file2.txt
