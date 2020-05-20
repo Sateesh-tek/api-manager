@@ -4,7 +4,7 @@ echo "API_ID" $USR
 echo "API_ID" $PSW
 echo "API_ID" $Target_Environment
 
-if [ $VALUE_FOURE == "policy" ]
+if [[ $VALUE_FOURE == "policy" ]]
 then
    echo "policy" 
     
