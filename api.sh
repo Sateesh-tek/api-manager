@@ -1,5 +1,5 @@
 #!/bin/sh
-
+echo "API_ID" $VALUE_FOURE
 
 if [ $Actions == "Create" ]
 then
