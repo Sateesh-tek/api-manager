@@ -3,9 +3,9 @@
 echo "API_ID" $USR
 echo "API_ID" $PSW
 echo "API_ID" $Target_Environment
-echo "API_ID"  ${VALUE_FOURE}
+echo "API_ID"  ${Actions}
 
-if [ $VALUE_FOURE == "policy" ]
+if [ $Actions == "policy" ]
 then
    echo "policy12346" 
     
