@@ -5,7 +5,7 @@ echo "API_ID" $PSW
 echo "API_ID" $Target_Environment
 echo "API_ID"  ${Actions}
 
-if [[ $Actions == "policy" ]]
+if [ $Actions == "policy" ]
 then
    echo "policy12346" 
     
