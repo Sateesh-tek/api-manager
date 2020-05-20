@@ -19,7 +19,7 @@ then
 
 elif [ $Actions == "Create" ]
 then
-   
+   echo "Create"
    anypoint-cli --username=$USR --password=$PSW --organization=$Business_Group --environment=$Target_Environment api-mgr api manage --type raml $API_Asset_Id $API_Asset_Version --muleVersion4OrAbove true >> file.txt 
 
 elif [  $Actions == "Update" ]
