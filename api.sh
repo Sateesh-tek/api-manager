@@ -1,5 +1,5 @@
 #!/bin/sh
-echo "API_ID" $VALUE_FOURE
+echo "API_ID" $VALUE_FOURE == "policy"
 
 if [ $Actions == "Create" ]
 then
@@ -7,7 +7,7 @@ then
    anypoint-cli --username=$USR --password=$PSW --organization=$Business_Group --environment=$Target_Environment api-mgr api manage --type raml $API_Asset_Id $API_Asset_Version --muleVersion4OrAbove true >> file.txt
     
 
-elif [  $Actions == "Create" && $VALUE_FOURE == 'policy']
+elif [  $Actions == "Create" && $VALUE_FOURE == "policy"]
 then
 
  awk '/new/  {print $NF}' file.txt >> file2.txt
