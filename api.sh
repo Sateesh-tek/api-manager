@@ -29,7 +29,7 @@ then
    
 elif [ $Actions == "Promote" ]
 then
-   anypoint-cli --username=$USR --password=$PSW --organization="$Business_Group" --environment=$Target_Environment api-mgr api promote -o json --copyPolicies true $API_InstanceId "da669ba5-e2b1-41ff-9bff-f1350361776d"
+   anypoint-cli --username=$USR --password=$PSW --organization="$Business_Group" --environment=$Target_Environment api-mgr api promote -o json --copyPolicies true $API_InstanceId $TARGET
 else
    echo "None of the condition met"
 fi
