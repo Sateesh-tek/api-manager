@@ -1,20 +1,18 @@
 #!/bin/bash
 
 echo $Actions
-a=10
-b=10
 
-if [ a == b ]
+if [ $Actions == "policy" ] 
 then
    echo "policy12346" 
     
-   #awk '/new/  {print $NF}' file.txt >> file2.txt
+   awk '/new/  {print $NF}' file.txt >> file2.txt
 
-   #API_ID="$(cat file2.txt)"
+   API_ID="$(cat file2.txt)"
  
-   #echo "API_ID" $API_ID
+   echo "API_ID" $API_ID
 
-   #anypoint-cli --username=$USR --password=$PSW --organization=$Business_Group --environment=$Target_Environment api-mgr policy apply -c '{"credentialsOriginHasHttpBasicAuthenticationHeader":"customExpression","clientIdExpression":"#[attributes.headers[\"client_id\"]]","clientSecretExpression":"#[attributes.headers[\"client_secret\"]]"}' $API_ID client-id-enforcement --groupId 68ef9520-24e9-4cf2-b2f5-620025690913 --policyVersion 1.2.1
+   anypoint-cli --username=$USR --password=$PSW --organization=$Business_Group --environment=$Target_Environment api-mgr policy apply -c '{"credentialsOriginHasHttpBasicAuthenticationHeader":"customExpression","clientIdExpression":"#[attributes.headers[\"client_id\"]]","clientSecretExpression":"#[attributes.headers[\"client_secret\"]]"}' $API_ID client-id-enforcement --groupId 68ef9520-24e9-4cf2-b2f5-620025690913 --policyVersion 1.2.1
 
 elif [ $Actions == "Create" ]
 then
