@@ -1,8 +1,10 @@
 #!/bin/sh
 
 echo $Actions
+a=10
+b=10
 
-if [ $Actions == "policy" ]
+if [ a == b ]
 then
    echo "policy12346" 
     
